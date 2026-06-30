@@ -41,7 +41,6 @@
         "monitor-right",
         "keyboard",
         "mouse",
-        "headphones",
         "coffee-mug"
       ],
       "connections": [
@@ -61,8 +60,7 @@
       "camera": "bookshelf-camera",
       "objects": [
         "bookshelf",
-        "timeline-books",
-        "career-frame"
+        "timeline-books"
       ],
       "connections": [
         "workspace"
@@ -112,7 +110,6 @@
       "camera": "window-camera",
       "objects": [
         "window",
-        "city-view",
         "future-board"
       ],
       "connections": [
@@ -132,8 +129,7 @@
       "objects": [
         "prototype-table",
         "ai-terminal",
-        "floating-display",
-        "future-projects"
+        "floating-display"
       ],
       "connections": [
         "window-area"

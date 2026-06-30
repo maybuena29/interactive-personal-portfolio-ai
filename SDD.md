@@ -376,33 +376,39 @@ Begin Rendering
 
 # 12. Data Source
 
-Everything originates from
+Portfolio information MUST NEVER be hardcoded.
 
-/data/
+Everything must originate from the configuration folders:
 
-Expected files
+/config/data/
+/config/world/
+/config/ai/
 
-profile.json
+Examples:
 
-projects.json
+config/data/
+- profile.json
+- projects.json
+- skills.json
+- experience.json
+- education.json
+- timeline.json
+- contact.json
+- settings.json
 
-experience.json
+config/world/
+- world-map.json
+- scene.json
+- objects.json
+- interactions.json
+- lighting.json
+- audio.json
 
-timeline.json
-
-education.json
-
-skills.json
-
-contact.json
-
-settings.json
-
-world-map.json
-
-objects.json
-
-No hardcoded portfolio information.
+config/ai/
+- portfolio.schema.json
+- query-map.json
+- prompt-context.json
+- agent-rules.json
 
 ---
 
@@ -1092,7 +1098,9 @@ Approved
 
 Related Documents
 
-AGENT.md
+AGENTS.md
+
+PROJECT_GUIDE.md
 
 README.md
 

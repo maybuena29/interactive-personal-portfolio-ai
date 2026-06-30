@@ -451,6 +451,96 @@
 
         "sound": "terminal"
       }
+    },
+
+    {
+      "id": "headphones",
+      "name": "Studio Headphones",
+      "type": "prop",
+      "model": "models/workspace/headphones.glb",
+      "area": "workspace",
+      "position": {
+        "x": -0.45,
+        "y": 0.92,
+        "z": -0.28
+      },
+      "rotation": {
+        "x": 0,
+        "y": 25,
+        "z": 0
+      },
+      "scale": 1,
+      "interactable": false,
+      "castShadow": true,
+      "receiveShadow": true
+    },
+
+    {
+      "id": "career-frame",
+      "name": "Career Timeline Frame",
+      "type": "interactive",
+      "model": "models/decor/career-frame.glb",
+      "area": "hallway",
+      "position": {
+        "x": 2.4,
+        "y": 1.6,
+        "z": -3.2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "scale": 1,
+      "interactionId": "career-timeline",
+      "interactable": true,
+      "castShadow": true,
+      "receiveShadow": true
+    },
+
+    {
+      "id": "city-view",
+      "name": "City Window View",
+      "type": "environment",
+      "model": "models/environment/city-window.glb",
+      "area": "workspace",
+      "position": {
+        "x": -4.8,
+        "y": 2.1,
+        "z": -6.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 1,
+      "interactable": false,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+
+    {
+      "id": "future-projects",
+      "name": "Future Projects Board",
+      "type": "interactive",
+      "model": "models/decor/future-projects-board.glb",
+      "area": "innovation-lab",
+      "position": {
+        "x": 5.3,
+        "y": 1.5,
+        "z": -2.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": -90,
+        "z": 0
+      },
+      "scale": 1,
+      "interactionId": "future-projects",
+      "interactable": true,
+      "castShadow": true,
+      "receiveShadow": true
     }
   ]
 }

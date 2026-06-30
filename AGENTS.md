@@ -62,63 +62,9 @@ Vite + TypeScript + Three.js + GSAP. Models from Blender as `.glb` (DRACO/KTX2 c
 
 ## Existing docs (keep)
 
-`AGENTS.md` > `AGENT.md` (if exists) > `SDD.md` > `README.md` > source code. The `config/ai/agent-rules.json` defines the in-portfolio AI assistant behavior.
-s
+`AGENTS.md` > `PROJECT_GUIDE.md` > `SDD.md` > `README.md` > source code. The `config/ai/agent-rules.json` defines the in-portfolio AI assistant behavior.
 
-Multiple themes
+## Inconsistencies fixed during implementation
 
-Localization
-
-AI assistant
-
-Voice interaction
-
-VR
-
-Multiplayer
-
-Analytics
-
-Without major rewrites.
-
----
-
-# 38. Guiding Principle
-
-Whenever a design decision is unclear, choose the solution that:
-
-- Improves immersion.
-- Improves maintainability.
-- Reduces technical debt.
-- Preserves performance.
-- Keeps portfolio data separate from rendering logic.
-- Makes the experience feel like exploring a real software engineer's workspace instead of browsing a website.
-
----
-
-# 39. Documentation Priority
-
-When documentation conflicts:
-
-1. AGENT.md
-2. SDD.md
-3. README.md
-4. Source Code
-
-The AI must always follow the highest-priority document.
-
-Before implementing a feature, verify that it aligns with AGENT.md.
-
----
-
-# End of Document
-
-Version: 1.0
-
-Status: Active
-
-Next Document:
-
-SDD.md
-
-```
+- `skills.json` references `"hotel101"` as project ID — corrected to `"hotel"` to match `projects.json`
+- `world-map.json` references `headphones`, `career-frame`, `city-view`, `future-projects` not in `objects.json` — omitted from area object lists```

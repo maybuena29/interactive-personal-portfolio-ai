@@ -146,7 +146,9 @@ portfolio/
 
 │
 
-├── AGENT.md
+├── AGENTS.md
+
+├── PROJECT_GUIDE.md
 
 ├── SDD.md
 
@@ -289,7 +291,7 @@ This repository uses several documentation files.
 
 | File | Purpose |
 |------|---------|
-| AGENT.md | AI development instructions |
+| AGENTS.md | AI development instructions |
 | SDD.md | Software Design Document |
 | README.md | Project overview |
 | data/*.json | Portfolio content |
@@ -421,7 +423,7 @@ Commit.
 Refer to:
 
 ```
-AGENT.md
+AGENTS.md
 ```
 
 All contributors should follow the coding standards defined in that document.

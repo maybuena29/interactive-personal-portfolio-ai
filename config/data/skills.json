@@ -101,7 +101,7 @@
       "years": 3,
       "description": "Primary language used for developing enterprise backend systems.",
       "relatedProjects": [
-        "hotel101",
+        "hotel",
         "loyalty-program-management-system",
         "tbe-onsite",
         "tbe-pre-registration",
@@ -121,7 +121,7 @@
       "years": 3,
       "description": "Primary backend framework used for enterprise applications, APIs, and scalable systems.",
       "relatedProjects": [
-        "hotel101",
+        "hotel",
         "loyalty-program-management-system",
         "tbe-onsite",
         "tbe-pre-registration",

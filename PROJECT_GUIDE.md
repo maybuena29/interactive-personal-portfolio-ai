@@ -1,4 +1,4 @@
-# AGENT.md
+# PROJECT_GUIDE.md
 
 > Project: Developer's Workspace
 >
@@ -843,14 +843,15 @@ Whenever a design decision is unclear, choose the solution that:
 
 When documentation conflicts:
 
-1. AGENT.md
-2. SDD.md
-3. README.md
-4. Source Code
+1. AGENTS.md
+2. PROJECT_GUIDE.md
+3. SDD.md
+4. README.md
+5. Source Code
 
 The AI must always follow the highest-priority document.
 
-Before implementing a feature, verify that it aligns with AGENT.md.
+Before implementing a feature, verify that it aligns with AGENTS.md.
 
 ---
 
