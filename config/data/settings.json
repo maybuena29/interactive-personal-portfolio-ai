@@ -1,0 +1,36 @@
+{
+  "theme": {
+    "default": "night",
+    "allowSwitch": true
+  },
+  "environment": {
+    "weather": "rain",
+    "ambientAudio": true,
+    "backgroundMusic": false,
+    "particles": true
+  },
+  "camera": {
+    "fov": 70,
+    "smoothMovement": true,
+    "smoothRotation": true
+  },
+  "controls": {
+    "desktop": "fps",
+    "tablet": "orbit",
+    "mobile": "touch"
+  },
+  "performance": {
+    "targetFPSDesktop": 60,
+    "targetFPSMobile": 30,
+    "dynamicQuality": true
+  },
+  "accessibility": {
+    "reduceMotion": false,
+    "subtitles": true,
+    "highContrast": false
+  },
+  "developer": {
+    "showFPS": false,
+    "debug": false
+  }
+}

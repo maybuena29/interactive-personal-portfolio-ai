@@ -1,0 +1,95 @@
+[
+  {
+    "id": "sdo-intern",
+    "company": "Schools Division Office",
+    "position": "Intern - Office Aide",
+    "employmentType": "Internship",
+    "start": "2023-03",
+    "end": "2023-05",
+    "current": false,
+    "summary": "Participated in developing an HR Information System using Laravel.",
+    "responsibilities": [
+      "Laravel development",
+      "System implementation",
+      "Backend support"
+    ],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Git"
+    ],
+    "projects": [
+      "sdoqc-ntpis"
+    ]
+  },
+  {
+    "id": "8nergy",
+    "company": "8NERGY IT Solutions Inc.",
+    "position": "Web Developer",
+    "employmentType": "Full Time",
+    "start": "2023-07",
+    "end": "2024-11",
+    "current": false,
+    "summary": "Developed enterprise ERP solutions while collaborating with cross-functional teams.",
+    "responsibilities": [
+      "ERP Development",
+      "Feature Development",
+      "Client Support",
+      "System Maintenance",
+      "Cross-team Collaboration"
+    ],
+    "technologies": [
+      "Laravel",
+      "React",
+      "Redux",
+      "MySQL",
+      "NGINX",
+      "REST API"
+    ],
+    "projects": [
+      "scr-productivity",
+      "raffle-system"
+    ]
+  },
+  {
+    "id": "thinkbit",
+    "company": "ThinkBIT Solutions",
+    "position": "Backend Web Developer",
+    "employmentType": "Full Time",
+    "start": "2025-02",
+    "end": null,
+    "current": true,
+    "summary": "Developing enterprise backend systems focused on scalability, architecture, testing, CI/CD, and RESTful APIs.",
+    "responsibilities": [
+      "Backend Development",
+      "System Architecture",
+      "REST API Development",
+      "Code Reviews",
+      "Unit Testing",
+      "Integration Testing",
+      "CI/CD",
+      "Technical Planning",
+      "System Monitoring"
+    ],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API",
+      "Git",
+      "JIRA",
+      "Postman",
+      "Python",
+      "CI/CD"
+    ],
+    "projects": [
+      "hotel",
+      "loyalty-program-management-system",
+      "tbe-onsite",
+      "tbe-pre-registration",
+      "kure",
+      "wfp-wims"
+    ]
+  }
+]

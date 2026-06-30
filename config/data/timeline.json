@@ -1,0 +1,96 @@
+[
+  {
+    "id": "shs",
+    "year": 2017,
+    "type": "education",
+    "title": "Started Senior High School",
+    "organization": "STI College Muñoz-EDSA",
+    "description": "Began specializing in Mobile Application and Web Development.",
+    "related": {
+      "educationId": "sti-shs"
+    }
+  },
+  {
+    "id": "codefest-2019",
+    "year": 2019,
+    "type": "achievement",
+    "title": "Local Champion - Codefest 2019",
+    "organization": "STI College Muñoz-EDSA",
+    "description": "Won the local programming competition.",
+    "related": {
+      "achievementId": "codefest-2019"
+    }
+  },
+  {
+    "id": "college",
+    "year": 2019,
+    "type": "education",
+    "title": "Started Bachelor of Science in Information Technology",
+    "organization": "STI College Muñoz-EDSA",
+    "description": "Focused on Software Engineering and Web Development.",
+    "related": {
+      "educationId": "sti-college"
+    }
+  },
+  {
+    "id": "pharma-mediko",
+    "year": 2022,
+    "type": "project",
+    "title": "Developed Pharma-Mediko Thesis",
+    "description": "Built an ordering, inventory, and POS platform with mobile integration.",
+    "related": {
+      "projectId": "pharma-mediko"
+    }
+  },
+  {
+    "id": "internship",
+    "year": 2023,
+    "type": "experience",
+    "title": "Intern - Office Aide",
+    "organization": "Schools Division Office",
+    "description": "Contributed to HR Information System development using Laravel.",
+    "related": {
+      "experienceId": "sdo-intern"
+    }
+  },
+  {
+    "id": "graduation",
+    "year": 2023,
+    "type": "achievement",
+    "title": "Graduated Magna Cum Laude",
+    "organization": "STI College Muñoz-EDSA",
+    "description": "Graduated as Batch Valedictorian.",
+    "related": {
+      "educationId": "sti-college"
+    }
+  },
+  {
+    "id": "8nergy",
+    "year": 2023,
+    "type": "experience",
+    "title": "Joined 8NERGY IT Solutions Inc.",
+    "organization": "8NERGY IT Solutions Inc.",
+    "description": "Started professional career as a Web Developer.",
+    "related": {
+      "experienceId": "8nergy"
+    }
+  },
+  {
+    "id": "thinkbit",
+    "year": 2025,
+    "type": "experience",
+    "title": "Joined ThinkBIT Solutions",
+    "organization": "ThinkBIT Solutions",
+    "description": "Backend Web Developer for enterprise systems.",
+    "related": {
+      "experienceId": "thinkbit"
+    }
+  },
+  {
+    "id": "present",
+    "year": 2026,
+    "type": "milestone",
+    "title": "Building Enterprise Platforms",
+    "description": "Developing scalable backend systems, APIs, CI/CD pipelines, and modern enterprise applications."
+  }
+]

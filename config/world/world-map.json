@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "scene": "developers-workspace",
+  "startingArea": "entrance",
+  "spawnPoint": "spawn-main",
+  "defaultCamera": "intro-camera",
+
+  "areas": [
+    {
+      "id": "entrance",
+      "name": "Entrance",
+      "title": "Arrival",
+      "description": "Beginning of the visitor journey.",
+      "order": 1,
+      "music": "ambient-rain",
+      "lighting": "entrance-lighting",
+      "camera": "intro-camera",
+      "objects": [
+        "main-door",
+        "welcome-sign",
+        "floor-light"
+      ],
+      "connections": [
+        "workspace"
+      ]
+    },
+    {
+      "id": "workspace",
+      "name": "Workspace",
+      "title": "Developer Desk",
+      "description": "Primary interaction area.",
+      "order": 2,
+      "music": "workspace-ambient",
+      "lighting": "workspace-lighting",
+      "camera": "workspace-camera",
+      "objects": [
+        "developer-chair",
+        "main-desk",
+        "monitor-left",
+        "monitor-center",
+        "monitor-right",
+        "keyboard",
+        "mouse",
+        "coffee-mug"
+      ],
+      "connections": [
+        "library",
+        "architecture-zone",
+        "certificate-wall",
+        "window-area"
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Career Library",
+      "title": "Timeline",
+      "description": "Professional journey and milestones.",
+      "order": 3,
+      "lighting": "library-lighting",
+      "camera": "bookshelf-camera",
+      "objects": [
+        "bookshelf",
+        "timeline-books"
+      ],
+      "connections": [
+        "workspace"
+      ]
+    },
+    {
+      "id": "architecture-zone",
+      "name": "Architecture Corner",
+      "title": "Engineering",
+      "description": "Backend engineering, infrastructure, and technical skills.",
+      "order": 4,
+      "lighting": "server-lighting",
+      "camera": "server-camera",
+      "objects": [
+        "server-rack",
+        "network-board",
+        "terminal-console"
+      ],
+      "connections": [
+        "workspace"
+      ]
+    },
+    {
+      "id": "certificate-wall",
+      "name": "Achievement Wall",
+      "title": "Education & Recognition",
+      "description": "Academic milestones and achievements.",
+      "order": 5,
+      "lighting": "certificate-lighting",
+      "camera": "certificate-camera",
+      "objects": [
+        "diploma-frame",
+        "certificate-frame",
+        "award-frame"
+      ],
+      "connections": [
+        "workspace"
+      ]
+    },
+    {
+      "id": "window-area",
+      "name": "Reflection Space",
+      "title": "Future",
+      "description": "Vision and future goals.",
+      "order": 6,
+      "lighting": "window-lighting",
+      "camera": "window-camera",
+      "objects": [
+        "window",
+        "future-board"
+      ],
+      "connections": [
+        "workspace",
+        "secret-lab"
+      ]
+    },
+    {
+      "id": "secret-lab",
+      "name": "Innovation Lab",
+      "title": "Experimental",
+      "description": "Hidden room containing future projects and experimental work studying AI integration.",
+      "hidden": true,
+      "unlockCondition": "discover-secret-switch",
+      "lighting": "lab-lighting",
+      "camera": "lab-camera",
+      "objects": [
+        "prototype-table",
+        "ai-terminal",
+        "floating-display"
+      ],
+      "connections": [
+        "window-area"
+      ]
+    }
+  ],
+
+  "navigation": {
+    "desktop": {
+      "mode": "fps"
+    },
+    "tablet": {
+      "mode": "orbit"
+    },
+    "mobile": {
+      "mode": "guided"
+    }
+  },
+
+  "cameraFlow": [
+    "intro-camera",
+    "workspace-camera",
+    "interaction-camera",
+    "inspect-camera",
+    "return-camera"
+  ],
+
+  "interactionPriority": [
+    "monitor-center",
+    "terminal-console",
+    "bookshelf",
+    "server-rack",
+    "certificate-frame",
+    "future-board"
+  ]
+}

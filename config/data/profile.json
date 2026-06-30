@@ -1,0 +1,101 @@
+{
+  "id": "profile",
+
+  "personal": {
+    "firstName": "Benjie",
+    "lastName": "Maybuena",
+    "displayName": "Benjie Maybuena",
+    "title": "Full Stack Web Developer",
+    "headline": "Building scalable backend systems and modern web applications through clean architecture, thoughtful engineering, and continuous learning.",
+    "location": {
+      "country": "Philippines"
+    },
+    "availability": "Not yet open to professional opportunities"
+  },
+
+  "about": {
+    "summary": "Experienced Full Stack Web Developer specializing in Laravel, enterprise web applications, RESTful APIs, system architecture, testing, and modern frontend technologies. Passionate about building scalable software solutions while continuously improving development practices and engineering quality.",
+    "careerObjective": "To engineer reliable, maintainable, and scalable software solutions while continuously growing as a software engineer and contributing to meaningful products."
+  },
+
+  "professionalProfile": {
+    "currentRole": "Backend Web Developer",
+    "currentCompany": "ThinkBIT Solutions",
+    "specialization": [
+      "Backend Development",
+      "System Architecture",
+      "RESTful API Development",
+      "Enterprise Systems",
+      "Laravel Development",
+      "Software Engineering"
+    ]
+  },
+
+  "yearsOfExperience": {
+    "professional": 3,
+    "industryStart": 2023
+  },
+
+  "strengths": [
+    "Backend Architecture",
+    "Laravel Framework",
+    "API Design",
+    "Database Design",
+    "System Integration",
+    "Software Testing",
+    "CI/CD",
+    "Problem Solving",
+    "Agile Development",
+    "Technical Leadership"
+  ],
+
+  "coreValues": [
+    "Clean Code",
+    "Maintainability",
+    "Continuous Learning",
+    "Scalable Solutions",
+    "Team Collaboration",
+    "Engineering Excellence"
+  ],
+
+  "interests": [
+    "Software Engineering",
+    "System Design",
+    "Backend Development",
+    "Modern Web Technologies",
+    "Developer Experience",
+    "Automation"
+  ],
+
+  "featuredProjectIds": [
+    "tbe-onsite",
+    "loyalty-program-management-system",
+    "hotel",
+    "pharma-mediko"
+  ],
+
+  "quickFacts": {
+    "graduationAward": "Magna Cum Laude",
+    "academicRecognition": "Batch Valedictorian",
+    "codeCompetition": "Local Champion - Codefest 2019",
+    "preferredStack": [
+      "Laravel",
+      "PHP",
+      "JavaScript",
+      "React",
+      "MySQL"
+    ]
+  },
+
+  "scene": {
+    "primaryObject": "desk-computer",
+    "cameraFocus": "computer-monitor-center",
+    "interaction": "profile-terminal"
+  },
+
+  "metadata": {
+    "version": 1,
+    "lastUpdated": "2026-06-30",
+    "source": "maybuena-cv.pdf"
+  }
+}

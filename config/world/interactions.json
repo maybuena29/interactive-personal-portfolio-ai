@@ -1,0 +1,64 @@
+{
+  "version": 1,
+
+  "interactionTypes": {
+    "computer": {
+      "cameraTransition": true,
+      "freezePlayer": true,
+      "showCursor": true,
+      "closeKey": "Escape"
+    },
+
+    "terminal": {
+      "cameraTransition": true,
+      "freezePlayer": true,
+      "showCursor": true,
+      "allowKeyboardInput": true
+    },
+
+    "timeline": {
+      "cameraTransition": true,
+      "freezePlayer": true,
+      "scrollable": true
+    },
+
+    "gallery": {
+      "cameraTransition": true,
+      "freezePlayer": true,
+      "zoomable": true
+    },
+
+    "assistant": {
+      "cameraTransition": true,
+      "freezePlayer": true,
+      "voiceReady": false,
+      "chatEnabled": true
+    },
+
+    "roadmap": {
+      "cameraTransition": true,
+      "freezePlayer": true
+    },
+
+    "animation": {
+      "cameraTransition": false
+    },
+
+    "modal": {
+      "cameraTransition": true,
+      "freezePlayer": true
+    }
+  },
+
+  "highlight": {
+    "enabled": true,
+    "type": "outline",
+    "color": "#66ccff",
+    "pulse": true
+  },
+
+  "cursor": {
+    "default": "dot",
+    "interactive": "circle"
+  }
+}

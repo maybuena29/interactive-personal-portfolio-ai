@@ -1,0 +1,43 @@
+{
+  "version": 1,
+
+  "portfolio": {
+    "profile": "profile.json",
+    "timeline": "timeline.json",
+    "education": "education.json",
+    "experience": "experience.json",
+    "projects": "projects.json",
+    "skills": "skills.json",
+    "contact": "contact.json",
+    "settings": "settings.json"
+  },
+
+  "world": {
+    "scene": "scene.json",
+    "map": "world-map.json",
+    "objects": "objects.json",
+    "lighting": "lighting.json",
+    "audio": "audio.json",
+    "interactions": "interactions.json"
+  },
+
+  "relationships": {
+    "profile.projects": "projects.id",
+    "experience.projects": "projects.id",
+    "education.thesis.projectId": "projects.id",
+    "timeline.related.projectId": "projects.id",
+    "timeline.related.experienceId": "experience.id",
+    "timeline.related.educationId": "education.id",
+    "skills.relatedProjects": "projects.id"
+  },
+
+  "entryPoints": {
+    "about": "profile",
+    "career": "timeline",
+    "experience": "experience",
+    "projects": "projects",
+    "skills": "skills",
+    "education": "education",
+    "contact": "contact"
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "version": 1,
+
+  "objects": [
+    {
+      "id": "main-door",
+      "name": "Main Entrance Door",
+      "category": "environment",
+      "area": "entrance",
+      "model": "environment/main-door.glb",
+      "interactable": false,
+      "collidable": true
+    },
+
+    {
+      "id": "welcome-sign",
+      "name": "Welcome Sign",
+      "category": "information",
+      "area": "entrance",
+
+      "model": "props/welcome-sign.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "modal",
+        "title": "Welcome",
+        "dataSource": "profile",
+        "animation": "signGlow",
+        "camera": "welcome-camera",
+        "sound": "ui-open"
+      }
+    },
+
+    {
+      "id": "main-desk",
+      "name": "Developer Desk",
+      "category": "environment",
+      "area": "workspace",
+
+      "model": "furniture/main-desk.glb",
+
+      "interactable": false
+    },
+
+    {
+      "id": "developer-chair",
+      "name": "Developer Chair",
+      "category": "environment",
+      "area": "workspace",
+
+      "model": "furniture/chair.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "animation",
+        "animation": "chairRotate",
+        "camera": "chair-camera"
+      }
+    },
+
+    {
+      "id": "monitor-center",
+      "name": "Main Monitor",
+      "category": "monitor",
+      "area": "workspace",
+
+      "model": "workspace/monitor-center.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "computer",
+
+        "application": "profile",
+
+        "dataSource": "profile",
+
+        "camera": "monitor-center",
+
+        "animation": "monitorBoot",
+
+        "sound": "monitor-on"
+      }
+    },
+
+    {
+      "id": "monitor-left",
+      "name": "Projects Monitor",
+
+      "category": "monitor",
+
+      "area": "workspace",
+
+      "model": "workspace/monitor-left.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "computer",
+
+        "application": "projects",
+
+        "dataSource": "projects",
+
+        "camera": "monitor-left",
+
+        "animation": "monitorBoot",
+
+        "sound": "monitor-on"
+      }
+    },
+
+    {
+      "id": "monitor-right",
+      "name": "Experience Monitor",
+
+      "category": "monitor",
+
+      "area": "workspace",
+
+      "model": "workspace/monitor-right.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "computer",
+
+        "application": "experience",
+
+        "dataSource": "experience",
+
+        "camera": "monitor-right",
+
+        "animation": "monitorBoot",
+
+        "sound": "monitor-on"
+      }
+    },
+
+    {
+      "id": "keyboard",
+
+      "category": "prop",
+
+      "area": "workspace",
+
+      "model": "workspace/keyboard.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "animation",
+        "animation": "keyboardTyping",
+        "sound": "keyboard"
+      }
+    },
+
+    {
+      "id": "mouse",
+
+      "category": "prop",
+
+      "area": "workspace",
+
+      "model": "workspace/mouse.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "animation",
+        "animation": "mouseClick",
+        "sound": "mouse-click"
+      }
+    },
+
+    {
+      "id": "coffee-mug",
+
+      "category": "prop",
+
+      "area": "workspace",
+
+      "model": "workspace/coffee.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "animation",
+
+        "animation": "coffeeSteam",
+
+        "sound": "coffee"
+      }
+    },
+
+    {
+      "id": "bookshelf",
+
+      "category": "timeline",
+
+      "area": "library",
+
+      "model": "library/bookshelf.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "timeline",
+
+        "dataSource": "timeline",
+
+        "camera": "bookshelf",
+
+        "animation": "bookPull"
+      }
+    },
+
+    {
+      "id": "timeline-books",
+
+      "category": "timeline",
+
+      "area": "library",
+
+      "model": "library/books.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "timeline",
+
+        "dataSource": "timeline"
+      }
+    },
+
+    {
+      "id": "server-rack",
+
+      "category": "skills",
+
+      "area": "architecture-zone",
+
+      "model": "server/server-rack.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "terminal",
+
+        "dataSource": "skills",
+
+        "camera": "server-rack",
+
+        "animation": "serverBoot",
+
+        "sound": "server"
+      }
+    },
+
+    {
+      "id": "network-board",
+
+      "category": "architecture",
+
+      "area": "architecture-zone",
+
+      "model": "server/network.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "diagram",
+
+        "dataSource": "skills"
+      }
+    },
+
+    {
+      "id": "terminal-console",
+
+      "category": "terminal",
+
+      "area": "architecture-zone",
+
+      "model": "server/terminal.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "terminal",
+
+        "application": "developer-console",
+
+        "dataSource": "all"
+      }
+    },
+
+    {
+      "id": "certificate-frame",
+
+      "category": "education",
+
+      "area": "certificate-wall",
+
+      "model": "education/certificate.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "gallery",
+
+        "dataSource": "education",
+
+        "animation": "frameLight"
+      }
+    },
+
+    {
+      "id": "diploma-frame",
+
+      "category": "education",
+
+      "area": "certificate-wall",
+
+      "model": "education/diploma.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "gallery",
+
+        "dataSource": "education"
+      }
+    },
+
+    {
+      "id": "award-frame",
+
+      "category": "achievement",
+
+      "area": "certificate-wall",
+
+      "model": "education/award.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "gallery",
+
+        "dataSource": "education"
+      }
+    },
+
+    {
+      "id": "future-board",
+
+      "category": "future",
+
+      "area": "window-area",
+
+      "model": "future/future-board.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "roadmap",
+
+        "dataSource": "future"
+      }
+    },
+
+    {
+      "id": "window",
+
+      "category": "environment",
+
+      "area": "window-area",
+
+      "model": "environment/window.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "animation",
+
+        "animation": "rainWindow"
+      }
+    },
+
+    {
+      "id": "prototype-table",
+
+      "category": "future",
+
+      "area": "secret-lab",
+
+      "model": "lab/table.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "projects",
+
+        "dataSource": "projects",
+
+        "filter": "experimental"
+      }
+    },
+
+    {
+      "id": "floating-display",
+
+      "category": "future",
+
+      "area": "secret-lab",
+
+      "model": "lab/hologram.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "hologram",
+
+        "dataSource": "projects"
+      }
+    },
+
+    {
+      "id": "ai-terminal",
+
+      "category": "assistant",
+
+      "area": "secret-lab",
+
+      "model": "lab/ai-terminal.glb",
+
+      "interactable": true,
+
+      "interaction": {
+        "type": "assistant",
+
+        "application": "portfolio-ai",
+
+        "dataSource": "all",
+
+        "camera": "ai-terminal",
+
+        "animation": "terminalBoot",
+
+        "sound": "terminal"
+      }
+    },
+
+    {
+      "id": "headphones",
+      "name": "Studio Headphones",
+      "type": "prop",
+      "model": "models/workspace/headphones.glb",
+      "area": "workspace",
+      "position": {
+        "x": -0.45,
+        "y": 0.92,
+        "z": -0.28
+      },
+      "rotation": {
+        "x": 0,
+        "y": 25,
+        "z": 0
+      },
+      "scale": 1,
+      "interactable": false,
+      "castShadow": true,
+      "receiveShadow": true
+    },
+
+    {
+      "id": "career-frame",
+      "name": "Career Timeline Frame",
+      "type": "interactive",
+      "model": "models/decor/career-frame.glb",
+      "area": "hallway",
+      "position": {
+        "x": 2.4,
+        "y": 1.6,
+        "z": -3.2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "scale": 1,
+      "interactionId": "career-timeline",
+      "interactable": true,
+      "castShadow": true,
+      "receiveShadow": true
+    },
+
+    {
+      "id": "city-view",
+      "name": "City Window View",
+      "type": "environment",
+      "model": "models/environment/city-window.glb",
+      "area": "workspace",
+      "position": {
+        "x": -4.8,
+        "y": 2.1,
+        "z": -6.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 1,
+      "interactable": false,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+
+    {
+      "id": "future-projects",
+      "name": "Future Projects Board",
+      "type": "interactive",
+      "model": "models/decor/future-projects-board.glb",
+      "area": "innovation-lab",
+      "position": {
+        "x": 5.3,
+        "y": 1.5,
+        "z": -2.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": -90,
+        "z": 0
+      },
+      "scale": 1,
+      "interactionId": "future-projects",
+      "interactable": true,
+      "castShadow": true,
+      "receiveShadow": true
+    }
+  ]
+}
