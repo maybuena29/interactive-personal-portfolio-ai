@@ -1,0 +1,289 @@
+{
+  "version": 1,
+
+  "description": "Maps user intents, keywords, and technologies to the datasets the Portfolio AI should consult before generating a response.",
+
+  "lookupPriority": [
+    "profile",
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "timeline",
+    "contact"
+  ],
+
+  "keywords": {
+    "about": [
+      "profile"
+    ],
+    "introduction": [
+      "profile"
+    ],
+    "who are you": [
+      "profile"
+    ],
+    "bio": [
+      "profile"
+    ],
+    "summary": [
+      "profile"
+    ],
+
+    "experience": [
+      "experience",
+      "timeline"
+    ],
+    "career": [
+      "timeline",
+      "experience"
+    ],
+    "work": [
+      "experience"
+    ],
+    "employment": [
+      "experience"
+    ],
+    "company": [
+      "experience"
+    ],
+    "companies": [
+      "experience"
+    ],
+
+    "education": [
+      "education"
+    ],
+    "college": [
+      "education"
+    ],
+    "school": [
+      "education"
+    ],
+    "degree": [
+      "education"
+    ],
+    "graduation": [
+      "education",
+      "timeline"
+    ],
+    "thesis": [
+      "education",
+      "projects"
+    ],
+
+    "timeline": [
+      "timeline"
+    ],
+    "journey": [
+      "timeline"
+    ],
+    "history": [
+      "timeline"
+    ],
+    "milestones": [
+      "timeline"
+    ],
+
+    "projects": [
+      "projects"
+    ],
+    "portfolio": [
+      "projects"
+    ],
+    "system": [
+      "projects"
+    ],
+    "application": [
+      "projects"
+    ],
+    "enterprise": [
+      "projects"
+    ],
+
+    "skills": [
+      "skills"
+    ],
+    "technology": [
+      "skills"
+    ],
+    "technologies": [
+      "skills"
+    ],
+    "tech stack": [
+      "skills"
+    ],
+    "backend": [
+      "skills",
+      "experience",
+      "projects"
+    ],
+    "frontend": [
+      "skills",
+      "projects"
+    ],
+    "database": [
+      "skills"
+    ],
+    "testing": [
+      "skills"
+    ],
+    "devops": [
+      "skills"
+    ],
+
+    "laravel": [
+      "skills",
+      "experience",
+      "projects"
+    ],
+    "php": [
+      "skills",
+      "experience",
+      "projects"
+    ],
+    "javascript": [
+      "skills",
+      "projects"
+    ],
+    "typescript": [
+      "skills",
+      "projects"
+    ],
+    "react": [
+      "skills",
+      "projects"
+    ],
+    "redux": [
+      "skills",
+      "projects"
+    ],
+    "next.js": [
+      "skills"
+    ],
+    "node": [
+      "skills",
+      "projects"
+    ],
+    "express": [
+      "skills",
+      "projects"
+    ],
+    "python": [
+      "skills",
+      "experience"
+    ],
+    "mysql": [
+      "skills",
+      "projects"
+    ],
+    "sql": [
+      "skills"
+    ],
+    "git": [
+      "skills",
+      "experience"
+    ],
+    "jira": [
+      "skills",
+      "experience"
+    ],
+    "postman": [
+      "skills",
+      "experience"
+    ],
+    "rest": [
+      "skills",
+      "projects"
+    ],
+    "api": [
+      "skills",
+      "projects"
+    ],
+    "ci/cd": [
+      "skills",
+      "experience"
+    ],
+
+    "hotel101": [
+      "projects"
+    ],
+    "loyalty": [
+      "projects"
+    ],
+    "wfp": [
+      "projects"
+    ],
+    "kure": [
+      "projects"
+    ],
+    "tbe": [
+      "projects"
+    ],
+    "pharma-mediko": [
+      "projects",
+      "education"
+    ],
+    "erp": [
+      "projects"
+    ],
+    "raffle": [
+      "projects"
+    ],
+
+    "contact": [
+      "contact"
+    ],
+    "email": [
+      "contact"
+    ],
+    "github": [
+      "contact"
+    ],
+    "resume": [
+      "contact"
+    ],
+    "cv": [
+      "contact"
+    ]
+  },
+
+  "intentMap": {
+    "introduce": [
+      "profile"
+    ],
+    "describeExperience": [
+      "experience",
+      "timeline"
+    ],
+    "listProjects": [
+      "projects"
+    ],
+    "describeProject": [
+      "projects"
+    ],
+    "showSkills": [
+      "skills"
+    ],
+    "compareTechnologies": [
+      "skills",
+      "projects",
+      "experience"
+    ],
+    "educationHistory": [
+      "education",
+      "timeline"
+    ],
+    "contactInformation": [
+      "contact"
+    ]
+  },
+
+  "responseStrategy": {
+    "maximumDatasets": 3,
+    "preferProjectExamples": true,
+    "preferRecentExperience": true,
+    "mergeDuplicateResults": true,
+    "includeTimelineWhenRelevant": true
+  }
+}

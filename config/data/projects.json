@@ -1,0 +1,376 @@
+[
+  {
+    "id": "loyalty-program-management-system",
+    "title": "Loyalty Program Management System",
+    "category": "Enterprise Platform",
+    "featured": true,
+    "status": "Active",
+    "company": "ThinkBIT Solutions",
+    "client": "Confidential",
+    "role": "Backend Web Developer",
+    "period": {
+      "start": "2025-06",
+      "end": null
+    },
+    "summary": "Developed the backend architecture of a customer loyalty and product registration platform supporting promotions, rewards, points management, and redemption workflows.",
+    "description": "Designed scalable backend modules that support customer loyalty programs across web and mobile platforms. Contributed to API design, business logic implementation, testing, and deployment improvements.",
+    "responsibilities": [
+      "Backend Architecture",
+      "REST API Development",
+      "Business Logic",
+      "Database Design",
+      "Unit Testing",
+      "CI/CD Integration"
+    ],
+    "technologies": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "REST API",
+      "Git",
+      "JIRA",
+      "Postman",
+      "Python",
+      "CI/CD"
+    ],
+    "highlights": [
+      "Promo Management",
+      "Points Tracking",
+      "Reward Redemption",
+      "Product Registration",
+      "Scalable Backend Architecture"
+    ],
+    "skills": [
+      "laravel",
+      "php",
+      "mysql",
+      "rest-api",
+      "unit-testing",
+      "ci-cd"
+    ]
+  },
+  {
+    "id": "tbe-onsite",
+    "title": "TBE: Onsite",
+    "category": "Event Management",
+    "featured": true,
+    "status": "Active",
+    "company": "ThinkBIT Solutions",
+    "client": "Confidential",
+    "role": "Backend Web Developer",
+    "period": {
+      "start": "2025-07",
+      "end": null
+    },
+    "summary": "Enterprise event operations platform for attendee validation and QR-powered onsite registration.",
+    "description": "Developed backend services supporting real-time event registration, QR validation, attendee management, and automated reporting.",
+    "responsibilities": [
+      "API Development",
+      "Validation Services",
+      "Database Design",
+      "Testing"
+    ],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API",
+      "Git",
+      "JIRA",
+      "CI/CD"
+    ],
+    "highlights": [
+      "QR Check-in",
+      "Real-time Validation",
+      "Registration Management",
+      "Automated Reports"
+    ],
+    "skills": [
+      "laravel",
+      "backend",
+      "rest-api",
+      "testing"
+    ]
+  },
+  {
+    "id": "tbe-pre-registration",
+    "title": "TBE: Pre-registration",
+    "category": "Event Management",
+    "featured": true,
+    "status": "Active",
+    "company": "ThinkBIT Solutions",
+    "client": "Confidential",
+    "role": "Backend Web Developer",
+    "period": {
+      "start": "2026-02",
+      "end": null
+    },
+    "summary": "Dynamic pre-registration platform supporting customizable client onboarding workflows.",
+    "description": "Engineered backend workflows allowing clients to configure registration processes while automating notifications and validation.",
+    "responsibilities": [
+      "Workflow Development",
+      "Email Automation",
+      "Backend APIs",
+      "Testing"
+    ],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API",
+      "CI/CD"
+    ],
+    "highlights": [
+      "Dynamic Registration Flow",
+      "Automated Emails",
+      "Client Configuration"
+    ],
+    "skills": [
+      "laravel",
+      "workflow",
+      "automation",
+      "rest-api"
+    ]
+  },
+  {
+    "id": "hotel",
+    "title": "Hotel Management Platform",
+    "category": "Hospitality",
+    "featured": true,
+    "status": "Completed",
+    "company": "ThinkBIT Solutions",
+    "client": "Confidential",
+    "role": "Backend Web Developer",
+    "period": {
+      "start": "2025-03",
+      "end": "2025-06"
+    },
+    "summary": "Large-scale hospitality ecosystem supporting booking, loyalty, promotions, vouchers, kiosks, and real-time hotel services.",
+    "description": "Contributed to backend modules for one of the largest hospitality platforms handled by the company while maintaining scalability and reliability.",
+    "responsibilities": [
+      "Backend Development",
+      "REST APIs",
+      "Database Design",
+      "Testing"
+    ],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API",
+      "CI/CD"
+    ],
+    "highlights": [
+      "Booking System",
+      "Voucher Management",
+      "Promo Engine",
+      "Hotel Services",
+      "Loyalty Integration"
+    ],
+    "skills": [
+      "laravel",
+      "backend",
+      "mysql",
+      "api"
+    ]
+  },
+  {
+    "id": "wfp-wims",
+    "title": "WFP WIMS",
+    "category": "Disaster Management",
+    "featured": true,
+    "status": "Completed",
+    "company": "ThinkBIT Solutions",
+    "client": "Confidential",
+    "role": "Backend Web Developer",
+    "period": {
+      "start": "2025-08",
+      "end": "2025-08"
+    },
+    "summary": "Disaster reporting and monitoring platform with real-time geospatial visualization.",
+    "description": "Led backend development for a disaster management platform featuring heatmap reporting and geospatial data processing.",
+    "responsibilities": [
+      "Backend Development",
+      "System Design",
+      "API Development"
+    ],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API"
+    ],
+    "highlights": [
+      "Heatmap Visualization",
+      "Real-time Reports",
+      "Geospatial Monitoring"
+    ],
+    "skills": [
+      "laravel",
+      "gis",
+      "backend"
+    ]
+  },
+  {
+    "id": "kure",
+    "title": "KURE Leadership Growth Management System",
+    "category": "Enterprise Platform",
+    "featured": false,
+    "status": "Completed",
+    "company": "ThinkBIT Solutions",
+    "role": "Backend Web Developer",
+    "period": {
+      "start": "2025-09",
+      "end": "2025-12"
+    },
+    "summary": "Leadership development and organizational productivity platform.",
+    "description": "Enhanced backend modules for project tracking, reporting, and training management.",
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API",
+      "CI/CD"
+    ],
+    "highlights": [
+      "Reporting",
+      "Training",
+      "Project Tracking"
+    ],
+    "skills": [
+      "laravel",
+      "backend",
+      "reporting"
+    ]
+  },
+  {
+    "id": "scr-productivity",
+    "title": "SCR Productivity ERP",
+    "category": "ERP",
+    "featured": true,
+    "status": "Completed",
+    "company": "8NERGY IT Solutions Inc.",
+    "role": "Web Developer",
+    "period": {
+      "start": "2023-08",
+      "end": "2024-10"
+    },
+    "summary": "Enterprise Resource Planning platform automating business operations.",
+    "description": "Developed ERP modules that streamlined client business workflows and reduced manual operational effort.",
+    "technologies": [
+      "Laravel",
+      "React",
+      "Redux",
+      "SQL",
+      "NGINX",
+      "REST API"
+    ],
+    "highlights": [
+      "ERP",
+      "Business Automation",
+      "Workflow Optimization"
+    ],
+    "skills": [
+      "laravel",
+      "react",
+      "redux",
+      "erp"
+    ]
+  },
+  {
+    "id": "raffle-system",
+    "title": "Raffle System",
+    "category": "Business Application",
+    "featured": false,
+    "status": "Completed",
+    "company": "8NERGY IT Solutions Inc.",
+    "role": "Web Developer",
+    "period": {
+      "start": "2023-11",
+      "end": "2023-11"
+    },
+    "summary": "Automated raffle management system ensuring fair participant selection.",
+    "technologies": [
+      "Laravel",
+      "React",
+      "Redux",
+      "SQL"
+    ],
+    "highlights": [
+      "Participant Management",
+      "Random Selection",
+      "Automated Results"
+    ],
+    "skills": [
+      "laravel",
+      "react"
+    ]
+  },
+  {
+    "id": "sdoqc-ntpis",
+    "title": "SDOQC-NTPIS",
+    "category": "Information System",
+    "featured": false,
+    "status": "Completed",
+    "company": "Schools Division Office",
+    "role": "Intern Developer",
+    "period": {
+      "start": "2023-04",
+      "end": "2023-05"
+    },
+    "summary": "HR information system centralizing personnel records.",
+    "technologies": [
+      "Laravel",
+      "Livewire",
+      "PHP",
+      "SQL"
+    ],
+    "highlights": [
+      "Information System",
+      "Data Management"
+    ],
+    "skills": [
+      "laravel",
+      "livewire"
+    ]
+  },
+  {
+    "id": "pharma-mediko",
+    "title": "Pharma-Mediko",
+    "category": "Capstone Project",
+    "featured": true,
+    "status": "Completed",
+    "company": "STI College Muñoz-EDSA",
+    "role": "Lead Developer",
+    "period": {
+      "start": "2022-09",
+      "end": "2023-01"
+    },
+    "summary": "Integrated ordering, inventory management, and POS platform with mobile application.",
+    "description": "Designed and implemented a complete inventory ecosystem supporting ordering, stock management, POS operations, expiration monitoring, and real-time synchronization.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "MySQL",
+      "Tailwind CSS",
+      "PayPal"
+    ],
+    "highlights": [
+      "Ordering System",
+      "Inventory",
+      "POS",
+      "Expiration Alerts",
+      "Real-time Synchronization"
+    ],
+    "skills": [
+      "react",
+      "typescript",
+      "nodejs",
+      "express",
+      "socketio"
+    ]
+  }
+]

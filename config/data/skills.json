@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-06-30",
+
+  "categories": [
+    {
+      "id": "backend",
+      "title": "Backend Development",
+      "icon": "server-rack",
+      "priority": 1,
+      "description": "Designing scalable backend systems, APIs, business logic, and enterprise applications.",
+      "skills": [
+        "php",
+        "laravel",
+        "nodejs",
+        "expressjs",
+        "python",
+        "rest-api",
+        "socketio"
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend Development",
+      "icon": "monitor",
+      "priority": 2,
+      "description": "Building responsive and interactive web applications with modern frontend technologies.",
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "react",
+        "redux",
+        "nextjs",
+        "tailwind",
+        "bootstrap",
+        "blade",
+        "figma"
+      ]
+    },
+    {
+      "id": "database",
+      "title": "Database",
+      "icon": "database",
+      "priority": 3,
+      "description": "Designing relational databases and supporting enterprise data management.",
+      "skills": [
+        "mysql",
+        "mssql"
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing & Quality",
+      "icon": "check-circle",
+      "priority": 4,
+      "description": "Building reliable applications through testing and quality assurance.",
+      "skills": [
+        "unit-testing",
+        "integration-testing",
+        "system-testing",
+        "postman"
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "DevOps",
+      "icon": "cpu",
+      "priority": 5,
+      "description": "Deployment, version control, automation, and continuous integration.",
+      "skills": [
+        "git",
+        "nginx",
+        "ci-cd"
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Development Tools",
+      "icon": "toolbox",
+      "priority": 6,
+      "description": "Daily development workflow and collaboration tools.",
+      "skills": [
+        "vscode",
+        "jira",
+        "trello",
+        "slack",
+        "xampp"
+      ]
+    }
+  ],
+
+  "skills": [
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "backend",
+      "experienceLevel": "Advanced",
+      "featured": true,
+      "years": 3,
+      "description": "Primary language used for developing enterprise backend systems.",
+      "relatedProjects": [
+        "hotel101",
+        "loyalty-program-management-system",
+        "tbe-onsite",
+        "tbe-pre-registration",
+        "wfp-wims",
+        "kure",
+        "scr-productivity",
+        "raffle-system",
+        "sdoqc-ntpis"
+      ]
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "category": "backend",
+      "experienceLevel": "Advanced",
+      "featured": true,
+      "years": 3,
+      "description": "Primary backend framework used for enterprise applications, APIs, and scalable systems.",
+      "relatedProjects": [
+        "hotel101",
+        "loyalty-program-management-system",
+        "tbe-onsite",
+        "tbe-pre-registration",
+        "wfp-wims",
+        "kure",
+        "scr-productivity",
+        "raffle-system",
+        "sdoqc-ntpis"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "category": "backend",
+      "experienceLevel": "Beginner",
+      "featured": false,
+      "relatedProjects": [
+        "pharma-mediko"
+      ]
+    },
+    {
+      "id": "expressjs",
+      "name": "Express.js",
+      "category": "backend",
+      "experienceLevel": "Beginner",
+      "featured": false,
+      "relatedProjects": [
+        "pharma-mediko"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "backend",
+      "experienceLevel": "Beginner",
+      "featured": false,
+      "relatedProjects": [
+        "loyalty-program-management-system"
+      ]
+    },
+    {
+      "id": "rest-api",
+      "name": "RESTful API",
+      "category": "backend",
+      "experienceLevel": "Advanced",
+      "featured": true
+    },
+    {
+      "id": "socketio",
+      "name": "Socket.IO",
+      "category": "backend",
+      "experienceLevel": "Intermediate",
+      "featured": false,
+      "relatedProjects": [
+        "pharma-mediko"
+      ]
+    },
+    {
+      "id": "html",
+      "name": "HTML5",
+      "category": "frontend",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "css",
+      "name": "CSS3",
+      "category": "frontend",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "frontend",
+      "experienceLevel": "Advanced",
+      "featured": true
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "frontend",
+      "experienceLevel": "Beginner",
+      "relatedProjects": [
+        "pharma-mediko"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "frontend",
+      "experienceLevel": "Expert",
+      "featured": true,
+      "relatedProjects": [
+        "scr-productivity",
+        "raffle-system",
+        "pharma-mediko"
+      ]
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "category": "frontend",
+      "experienceLevel": "Intermediate",
+      "relatedProjects": [
+        "scr-productivity",
+        "raffle-system"
+      ]
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "frontend",
+      "experienceLevel": "Beginner"
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "experienceLevel": "Advanced",
+      "relatedProjects": [
+        "pharma-mediko"
+      ]
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "category": "frontend",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "blade",
+      "name": "Laravel Blade",
+      "category": "frontend",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "category": "frontend",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "database",
+      "experienceLevel": "Advanced",
+      "featured": true
+    },
+    {
+      "id": "mssql",
+      "name": "Microsoft SQL Server",
+      "category": "database",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "id": "unit-testing",
+      "name": "Unit Testing",
+      "category": "testing",
+      "experienceLevel": "Advanced",
+      "featured": true
+    },
+    {
+      "id": "integration-testing",
+      "name": "Integration Testing",
+      "category": "testing",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "system-testing",
+      "name": "System Testing",
+      "category": "testing",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "category": "testing",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops",
+      "experienceLevel": "Advanced",
+      "featured": true
+    },
+    {
+      "id": "nginx",
+      "name": "NGINX",
+      "category": "devops",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "id": "ci-cd",
+      "name": "CI/CD",
+      "category": "devops",
+      "experienceLevel": "Advanced",
+      "featured": true
+    },
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "category": "tools",
+      "experienceLevel": "Expert"
+    },
+    {
+      "id": "jira",
+      "name": "JIRA",
+      "category": "tools",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "category": "tools",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "category": "tools",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "id": "xampp",
+      "name": "XAMPP",
+      "category": "tools",
+      "experienceLevel": "Advanced"
+    }
+  ],
+
+  "featuredSkills": [
+    "laravel",
+    "php",
+    "javascript",
+    "react",
+    "mysql",
+    "rest-api",
+    "unit-testing",
+    "git",
+    "ci-cd"
+  ]
+}

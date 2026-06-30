@@ -1,0 +1,69 @@
+{
+  "version": 1,
+
+  "masterVolume": 0.8,
+
+  "ambient": [
+    {
+      "id": "ambient-rain",
+      "file": "audio/ambient/rain.mp3",
+      "loop": true,
+      "volume": 0.45
+    },
+    {
+      "id": "workspace-ambient",
+      "file": "audio/ambient/room.mp3",
+      "loop": true,
+      "volume": 0.35
+    },
+    {
+      "id": "pc-fan",
+      "file": "audio/ambient/pc-fan.mp3",
+      "loop": true,
+      "volume": 0.18
+    }
+  ],
+
+  "effects": [
+    {
+      "id": "monitor-on",
+      "file": "audio/sfx/monitor-on.mp3"
+    },
+    {
+      "id": "keyboard",
+      "file": "audio/sfx/keyboard.mp3"
+    },
+    {
+      "id": "mouse-click",
+      "file": "audio/sfx/mouse-click.mp3"
+    },
+    {
+      "id": "coffee",
+      "file": "audio/sfx/mug.mp3"
+    },
+    {
+      "id": "book",
+      "file": "audio/sfx/book.mp3"
+    },
+    {
+      "id": "door",
+      "file": "audio/sfx/door.mp3"
+    },
+    {
+      "id": "server",
+      "file": "audio/sfx/server.mp3"
+    },
+    {
+      "id": "terminal",
+      "file": "audio/sfx/terminal.mp3"
+    },
+    {
+      "id": "ui-open",
+      "file": "audio/sfx/open.mp3"
+    },
+    {
+      "id": "ui-close",
+      "file": "audio/sfx/close.mp3"
+    }
+  ]
+}

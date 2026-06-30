@@ -1,0 +1,14 @@
+{
+  "email": "maybuena.work@gmail.com",
+  "website": "https://maybuena-portfolio.netlify.app",
+  "github": {
+    "username": "maybuena29",
+    "url": "https://github.com/maybuena29"
+  },
+  "resume": {
+    "enabled": true,
+    "filename": "maybuena-cv.pdf"
+  },
+  "socials": [],
+  "preferredContact": "email"
+}

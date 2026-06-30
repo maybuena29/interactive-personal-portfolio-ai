@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sti-shs",
+    "institution": "STI College Muñoz-EDSA",
+    "program": "Information Technology",
+    "specialization": "Mobile Application and Web Development",
+    "level": "Senior High School",
+    "startYear": 2017,
+    "endYear": 2019,
+    "awards": [],
+    "description": "Completed Senior High School with specialization in software and mobile development."
+  },
+  {
+    "id": "sti-college",
+    "institution": "STI College Muñoz-EDSA",
+    "program": "Bachelor of Science in Information Technology",
+    "level": "College",
+    "startYear": 2019,
+    "endYear": 2023,
+    "honors": [
+      "Magna Cum Laude",
+      "Batch Valedictorian"
+    ],
+    "thesis": {
+      "title": "Pharma-Mediko: A Web-Based Ordering System and Point of Sale with Mobile Application for CoruMed Pharmacy",
+      "projectId": "pharma-mediko"
+    },
+    "awards": [
+      {
+        "title": "Local Champion",
+        "event": "Codefest 2019"
+      }
+    ]
+  }
+]

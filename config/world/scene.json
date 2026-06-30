@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "id": "developers-workspace",
+
+  "environment": {
+    "mode": "auto",
+    "allowManualOverride": true,
+    "activePreset": null,
+
+    "timeRanges": {
+      "day": {
+        "startHour": 6,
+        "endHour": 18,
+        "defaultPreset": "sunny-day",
+        "alternatePreset": "rainy-day"
+      },
+      "night": {
+        "startHour": 18,
+        "endHour": 6,
+        "defaultPreset": "clear-night",
+        "alternatePreset": "rainy-night"
+      }
+    },
+
+    "presets": {
+      "sunny-day": {
+        "weather": "clear",
+        "time": "day",
+        "skybox": "hdr/sunny-day.hdr",
+        "lightingPreset": "sunny-day",
+        "audioPreset": "birds",
+        "particles": "none",
+        "fog": {
+          "enabled": false
+        }
+      },
+
+      "rainy-day": {
+        "weather": "rain",
+        "time": "day",
+        "skybox": "hdr/rainy-day.hdr",
+        "lightingPreset": "rainy-day",
+        "audioPreset": "rain",
+        "particles": "rain",
+        "fog": {
+          "enabled": true,
+          "near": 35,
+          "far": 140
+        }
+      },
+
+      "clear-night": {
+        "weather": "clear",
+        "time": "night",
+        "skybox": "hdr/clear-night.hdr",
+        "lightingPreset": "clear-night",
+        "audioPreset": "night",
+        "particles": "none",
+        "fog": {
+          "enabled": true,
+          "near": 40,
+          "far": 160
+        }
+      },
+
+      "rainy-night": {
+        "weather": "rain",
+        "time": "night",
+        "skybox": "hdr/rainy-night.hdr",
+        "lightingPreset": "rainy-night",
+        "audioPreset": "rain",
+        "particles": "rain",
+        "fog": {
+          "enabled": true,
+          "near": 20,
+          "far": 80
+        }
+      }
+    }
+  },
+
+  "player": {
+    "spawn": "spawn-main",
+    "height": 1.72,
+    "speed": 3.5,
+    "sprintSpeed": 5.5,
+    "interactionDistance": 2.5
+  },
+
+  "camera": {
+    "defaultFov": 70,
+    "near": 0.1,
+    "far": 1000,
+    "smoothFactor": 0.08
+  },
+
+  "physics": {
+    "gravity": true,
+    "collision": true
+  },
+
+  "rendering": {
+    "shadows": true,
+    "toneMapping": "ACESFilmic",
+    "antialias": true,
+    "pixelRatio": "device"
+  },
+
+  "postProcessing": {
+    "bloom": true,
+    "ambientOcclusion": true,
+    "vignette": true
+  },
+
+  "mobile": {
+    "simplifiedShadows": true,
+    "disableSSR": true,
+    "disableReflectionProbes": true
+  }
+}
