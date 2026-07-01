@@ -125,6 +125,8 @@ export class MobileInput {
         this.touchId = null;
         this.joystickX = 0;
         this.joystickY = 0;
+        this.state.moveX = 0;
+        this.state.moveY = 0;
         if (this.joystickKnob) {
           this.joystickKnob.style.transform = 'translate(-50%,-50%)';
         }

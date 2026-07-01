@@ -304,7 +304,14 @@ export class Engine {
 
   private onTouchStart(e: TouchEvent): void {
     if (!this.isMobile) return;
-    if (e.touches.length === 1 && this.interactionSystem.stateMachine.getPhase() === 'idle') {
+    if (e.touches.length !== 1) return;
+
+    const joystick = document.getElementById('joystick-container');
+    if (joystick && joystick.contains(e.target as Node)) return;
+
+    const phase = this.interactionSystem.stateMachine.getPhase();
+
+    if (phase === 'idle') {
       this.interactionPointer.x = 0;
       this.interactionPointer.y = 0;
       setTimeout(() => {
@@ -312,6 +319,11 @@ export class Engine {
           this.interactionSystem.handleMobileTap();
         }
       }, 10);
+      return;
+    }
+
+    if (!document.querySelector('.ui-terminal, .ui-computer, .ui-panel, .ai-chat')) {
+      this.interactionSystem.endInteraction();
     }
   }
 
