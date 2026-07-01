@@ -284,10 +284,12 @@ export class UIManager {
         html += `<div class="section"><span class="label">Projects (${data.projects.length})</span><div class="value">${data.projects.slice(0, 5).map((p: any) => p.title).join(', ')}${data.projects.length > 5 ? '...' : ''}</div></div>`;
       }
       if (Array.isArray(data.experience)) {
-        html += `<div class="section"><span class="label">Experience</span><div class="value">${data.experience.map((e: any) => `${e.position} at ${e.company}`).join(', ')}</div></div>`;
+        const sortedExperience = [...data.experience].sort((a: any, b: any) => b.start.localeCompare(a.start));
+        html += `<div class="section"><span class="label">Experience</span><div class="value">${sortedExperience.map((e: any) => `${e.position} at ${e.company}`).join(', ')}</div></div>`;
       }
       if (Array.isArray(data.education)) {
-        html += `<div class="section"><span class="label">Education</span><div class="value">${data.education.map((e: any) => `${e.program} — ${e.institution}`).join(', ')}</div></div>`;
+        const sortedEducation = [...data.education].sort((a: any, b: any) => b.startYear - a.startYear);
+        html += `<div class="section"><span class="label">Education</span><div class="value">${sortedEducation.map((e: any) => `${e.program} — ${e.institution}`).join(', ')}</div></div>`;
       }
       if (data.skills?.categories) {
         const allSkills = data.skills.categories.flatMap((c: any) => c.skills || []);
@@ -325,7 +327,7 @@ export class UIManager {
       panel.innerHTML = html;
     } else if (source === 'experience' && Array.isArray(data)) {
       let html = `<div class="modal-header"><h2>Experience</h2></div><div class="modal-body">`;
-      data.forEach((e: any) => {
+      [...data].sort((a: any, b: any) => b.start.localeCompare(a.start)).forEach((e: any) => {
         html += `
           <div class="section">
             <span class="label">${e.position}</span>
@@ -352,7 +354,7 @@ export class UIManager {
       panel.innerHTML = html;
     } else if (source === 'education' && Array.isArray(data)) {
       let html = `<div class="modal-header"><h2>Education</h2></div><div class="modal-body">`;
-      data.forEach((e: any) => {
+      [...data].sort((a: any, b: any) => b.startYear - a.startYear).forEach((e: any) => {
         html += `
           <div class="section">
             <span class="label">${e.institution}</span>
@@ -376,7 +378,7 @@ export class UIManager {
       `;
     } else if (source === 'timeline' && Array.isArray(data)) {
       let html = `<div class="modal-header"><h2>Timeline</h2></div><div class="modal-body">`;
-      data.forEach((t: any) => {
+      [...data].sort((a: any, b: any) => b.year - a.year).forEach((t: any) => {
         html += `
           <div class="section">
             <span class="label">${t.year}</span>
@@ -440,7 +442,7 @@ export class UIManager {
 
     if (source === 'education' && Array.isArray(data)) {
       let html = `<div class="modal-header"><h2>Education</h2></div><div class="modal-body">`;
-      data.forEach((e: any) => {
+      [...data].sort((a: any, b: any) => b.startYear - a.startYear).forEach((e: any) => {
         html += `
           <div class="item">
             <h3>${e.institution}</h3>
@@ -476,7 +478,7 @@ export class UIManager {
       `;
     } else if (source === 'timeline' && Array.isArray(data)) {
       let html = `<div class="modal-header"><h2>Timeline</h2></div><div class="modal-body">`;
-      data.forEach((t: any) => {
+      [...data].sort((a: any, b: any) => b.year - a.year).forEach((t: any) => {
         html += `
           <div class="item">
             <h3>${t.year} - ${t.title}</h3>
