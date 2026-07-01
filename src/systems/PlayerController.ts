@@ -76,6 +76,11 @@ export class PlayerController {
 
   onMouseMove(dx: number, dy: number): void {
     if (!this.isLocked || !this.active) return;
+    this.applyLook(dx, dy);
+  }
+
+  applyLook(dx: number, dy: number): void {
+    if (!this.active) return;
     this.euler.setFromQuaternion(this.camera.quaternion);
     this.euler.y -= dx * this.config.sensitivity;
     this.euler.x -= dy * this.config.sensitivity;

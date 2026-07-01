@@ -332,7 +332,7 @@ export class Engine {
         const lookY = mobileState.lookY;
         if (lookX !== 0 || lookY !== 0) {
           const sensitivity = this.playerController.getSensitivity();
-          this.playerController.onMouseMove(
+          this.playerController.applyLook(
             lookX / sensitivity,
             lookY / sensitivity
           );
