@@ -3,11 +3,24 @@
 
   "objects": [
     {
+      "id": "main-desk-2",
+      "name": "Second Developer Desk",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 4.6, "y": 0.4, "z": -2 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
+      "interactable": false,
+      "collidable": false
+    },
+
+    {
       "id": "main-door",
       "name": "Main Entrance Door",
       "category": "environment",
       "area": "entrance",
       "model": "environment/main-door.glb",
+      "position": { "x": 0, "y": 1.25, "z": -4.85 },
       "interactable": false,
       "collidable": true
     },
@@ -17,11 +30,9 @@
       "name": "Welcome Sign",
       "category": "information",
       "area": "entrance",
-
       "model": "props/welcome-sign.glb",
-
+      "position": { "x": 1, "y": 0.8, "z": -4.5 },
       "interactable": true,
-
       "interaction": {
         "type": "modal",
         "title": "Welcome",
@@ -29,6 +40,10 @@
         "animation": "signGlow",
         "camera": "welcome-camera",
         "sound": "ui-open"
+      },
+      "cameraFocus": {
+      "position": { "x": 1, "y": 1.4, "z": -4 },
+        "lookAt": { "x": 2.5, "y": 1.2, "z": -4.7 }
       }
     },
 
@@ -37,9 +52,8 @@
       "name": "Developer Desk",
       "category": "environment",
       "area": "workspace",
-
       "model": "furniture/main-desk.glb",
-
+      "position": { "x": 2.8, "y": 0.4, "z": 4 },
       "interactable": false
     },
 
@@ -48,15 +62,17 @@
       "name": "Developer Chair",
       "category": "environment",
       "area": "workspace",
-
       "model": "furniture/chair.glb",
-
+      "position": { "x": 2.8, "y": 0.25, "z": 3.1 },
       "interactable": true,
-
       "interaction": {
-        "type": "animation",
-        "animation": "chairRotate",
-        "camera": "chair-camera"
+        "type": "modal",
+        "title": "Sitting at Desk",
+        "dataSource": "profile"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.5, "z": 3.15 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 3.75 }
       }
     },
 
@@ -65,482 +81,693 @@
       "name": "Main Monitor",
       "category": "monitor",
       "area": "workspace",
-
       "model": "workspace/monitor-center.glb",
-
+      "position": { "x": 2.8, "y": 1.15, "z": 4.25 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "computer",
-
         "application": "profile",
-
         "dataSource": "profile",
-
         "camera": "monitor-center",
-
         "animation": "monitorBoot",
-
         "sound": "monitor-on"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.4, "z": 3.2 },
+        "lookAt": { "x": 2.8, "y": 0.9, "z": 4.25 }
       }
     },
 
     {
       "id": "monitor-left",
-      "name": "Projects Monitor",
-
+      "name": "Experience Monitor",
       "category": "monitor",
-
       "area": "workspace",
-
       "model": "workspace/monitor-left.glb",
-
+      "position": { "x": 3.4, "y": 1.15, "z": 4.10 },
+      "rotation": { "x": 0, "y": 215, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "computer",
-
-        "application": "projects",
-
-        "dataSource": "projects",
-
+        "application": "experience",
+        "dataSource": "experience",
         "camera": "monitor-left",
-
         "animation": "monitorBoot",
-
         "sound": "monitor-on"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.4, "z": 3.2 },
+        "lookAt": { "x": 3.3, "y": 0.9, "z": 4.25 }
       }
     },
 
     {
       "id": "monitor-right",
-      "name": "Experience Monitor",
-
+      "name": "Projects Monitor",
       "category": "monitor",
-
       "area": "workspace",
-
       "model": "workspace/monitor-right.glb",
-
+      "position": { "x": 2.2, "y": 1.15, "z": 4.10 },
+      "rotation": { "x": 0, "y": 145, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "computer",
-
-        "application": "experience",
-
-        "dataSource": "experience",
-
+        "application": "projects",
+        "dataSource": "projects",
         "camera": "monitor-right",
-
         "animation": "monitorBoot",
-
         "sound": "monitor-on"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.4, "z": 3.2 },
+        "lookAt": { "x": 2.3, "y": 0.9, "z": 0.75 }
       }
     },
 
     {
       "id": "keyboard",
-
       "category": "prop",
-
       "area": "workspace",
-
       "model": "workspace/keyboard.glb",
-
+      "position": { "x": 2.8, "y": 1.19, "z": 3.75 },
       "interactable": true,
-
       "interaction": {
         "type": "animation",
         "animation": "keyboardTyping",
         "sound": "keyboard"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.5, "z": 3.30 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "mouse",
-
       "category": "prop",
-
       "area": "workspace",
-
       "model": "workspace/mouse.glb",
-
+      "position": { "x": 2.4, "y": 1.19, "z": 3.75 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "animation",
         "animation": "mouseClick",
         "sound": "mouse-click"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.5, "z": 3.30 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "coffee-mug",
-
       "category": "prop",
-
       "area": "workspace",
-
       "model": "workspace/coffee.glb",
-
+      "position": { "x": 3.30, "y": 1.19, "z": 3.75 },
       "interactable": true,
-
       "interaction": {
         "type": "animation",
-
         "animation": "coffeeSteam",
-
         "sound": "coffee"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.5, "z": 3.30 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "bookshelf",
-
       "category": "timeline",
-
       "area": "library",
-
       "model": "library/bookshelf.glb",
-
+      "position": { "x": -4.5, "y": 1.0, "z": 0 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "timeline",
-
         "dataSource": "timeline",
-
         "camera": "bookshelf",
-
         "animation": "bookPull"
+      },
+      "cameraFocus": {
+        "position": { "x": -3.5, "y": 1.5, "z": -1 },
+        "lookAt": { "x": -4.2, "y": 1.0, "z": 0 }
       }
     },
 
     {
       "id": "timeline-books",
-
       "category": "timeline",
-
       "area": "library",
-
       "model": "library/books.glb",
-
+      "position": { "x": -4.5, "y": 1, "z": 0.05 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "timeline",
-
         "dataSource": "timeline"
       }
     },
 
     {
       "id": "server-rack",
-
       "category": "skills",
-
       "area": "architecture-zone",
-
       "model": "server/server-rack.glb",
-
+      "position": { "x": -4.1, "y": 0.6, "z": 4.0 },
       "interactable": true,
-
       "interaction": {
         "type": "terminal",
-
         "dataSource": "skills",
-
         "camera": "server-rack",
-
         "animation": "serverBoot",
-
         "sound": "server"
+      },
+      "cameraFocus": {
+        "position": { "x": -3.9, "y": 1.8, "z": 3 },
+        "lookAt": { "x": 4.0, "y": 0.9, "z": -2.0 }
       }
     },
 
     {
       "id": "network-board",
-
       "category": "architecture",
-
       "area": "architecture-zone",
-
       "model": "server/network.glb",
-
+      "position": { "x": 4.2, "y": 1.1, "z": 3.95 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "diagram",
-
         "dataSource": "skills"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.5, "z": 3.30 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "terminal-console",
-
       "category": "terminal",
-
       "area": "architecture-zone",
-
       "model": "server/terminal.glb",
-
+      "position": { "x": -3.05, "y": 0.3, "z": 4.5 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "terminal",
-
         "application": "developer-console",
-
-        "dataSource": "all"
+        "dataSource": "all",
+        "unlocks": "discover-secret-switch"
+      },
+      "cameraFocus": {
+        "position": { "x": -3.05, "y": 0.8, "z": 3.9 },
+        "lookAt": { "x": 3.5, "y": 0.3, "z": -2.5 }
       }
     },
 
     {
       "id": "certificate-frame",
-
       "category": "education",
-
       "area": "certificate-wall",
-
       "model": "education/certificate.glb",
-
+      "position": { "x": -4.75, "y": 2.5, "z": -3.7 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "gallery",
-
         "dataSource": "education",
-
         "animation": "frameLight"
+      },
+      "cameraFocus": {
+        "position": { "x": -3.50, "y": 1.5, "z": -2.7 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "diploma-frame",
-
       "category": "education",
-
       "area": "certificate-wall",
-
       "model": "education/diploma.glb",
-
+      "position": { "x": -4.75, "y": 2.5, "z": -2.7 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "gallery",
-
         "dataSource": "education"
+      },
+      "cameraFocus": {
+        "position": { "x": -3.50, "y": 1.5, "z": -2.7 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "award-frame",
-
       "category": "achievement",
-
       "area": "certificate-wall",
-
       "model": "education/award.glb",
-
+      "position": { "x": -4.75, "y": 2.5, "z": -1.7 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "gallery",
-
         "dataSource": "education"
+      },
+      "cameraFocus": {
+        "position": { "x": -3.50, "y": 1.5, "z": -2.7 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "future-board",
-
       "category": "future",
-
       "area": "window-area",
-
       "model": "future/future-board.glb",
-
+      "position": { "x": 2.8, "y": 2.6, "z": 4.7 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
       "interactable": true,
-
       "interaction": {
         "type": "roadmap",
-
         "dataSource": "future"
+      },
+      "cameraFocus": {
+        "position": { "x": 2.8, "y": 1.5, "z": 3.30 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
     },
 
     {
       "id": "window",
-
       "category": "environment",
-
       "area": "window-area",
-
       "model": "environment/window.glb",
-
+      "position": { "x": 0, "y": 1.5, "z": 4.7 },
       "interactable": true,
-
       "interaction": {
         "type": "animation",
-
         "animation": "rainWindow"
+      },
+      "cameraFocus": {
+        "position": { "x": 0, "y": 1.5, "z": 3.5 },
+        "lookAt": { "x": 0, "y": 1.5, "z": 5.0 }
       }
     },
 
     {
       "id": "prototype-table",
-
       "category": "future",
-
       "area": "secret-lab",
-
       "model": "lab/table.glb",
-
+      "position": { "x": -3.0, "y": 0.4, "z": 4 },
       "interactable": true,
-
       "interaction": {
         "type": "projects",
-
         "dataSource": "projects",
-
         "filter": "experimental"
       }
     },
 
     {
       "id": "floating-display",
-
       "category": "future",
-
       "area": "secret-lab",
-
       "model": "lab/hologram.glb",
-
+      "position": { "x": -3.3, "y": 1.2, "z": 4 },
       "interactable": true,
-
       "interaction": {
         "type": "hologram",
-
         "dataSource": "projects"
       }
     },
 
     {
       "id": "ai-terminal",
-
       "category": "assistant",
-
       "area": "secret-lab",
-
       "model": "lab/ai-terminal.glb",
-
+      "position": { "x": -2.8, "y": 1.2, "z": 4 },
       "interactable": true,
-
       "interaction": {
         "type": "assistant",
-
         "application": "portfolio-ai",
-
         "dataSource": "all",
-
         "camera": "ai-terminal",
-
         "animation": "terminalBoot",
-
         "sound": "terminal"
+      },
+      "cameraFocus": {
+        "position": { "x": -2.8, "y": 1.5, "z": 3.30 },
+        "lookAt": { "x": 2.8, "y": 1.19, "z": 0.25 }
       }
+    },
+
+    {
+      "id": "desk-rug",
+      "name": "Desk Rug",
+      "category": "furniture",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 2.8, "y": 0.5, "z": 4 },
+      "interactable": false
+    },
+
+    {
+      "id": "cabinet",
+      "name": "Storage Cabinet",
+      "category": "furniture",
+      "area": "library",
+      "model": "",
+      "position": { "x": 4.2, "y": 0.35, "z": 4 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
+      "interactable": false,
+      "collidable": true
+    },
+
+    {
+      "id": "router",
+      "name": "Network Router",
+      "category": "architecture",
+      "area": "architecture-zone",
+      "model": "",
+      "position": { "x": 4.2, "y": 1.15, "z": 3.95 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "ups",
+      "name": "UPS Unit",
+      "category": "skills",
+      "area": "architecture-zone",
+      "model": "",
+      "position": { "x": -4.1, "y": 2, "z": 4 },
+      "rotation": { "x": 0, "y": 180, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "wall-light-1",
+      "name": "Wall Light",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 4.8, "y": 1.2, "z": -1.0 },
+      "interactable": false
+    },
+
+    {
+      "id": "wall-light-2",
+      "name": "Wall Light",
+      "category": "environment",
+      "area": "library",
+      "model": "",
+      "position": { "x": -4.8, "y": 1.2, "z": 0.5 },
+      "interactable": false
+    },
+
+    {
+      "id": "wall-light-3",
+      "name": "Wall Light",
+      "category": "environment",
+      "area": "certificate-wall",
+      "model": "",
+      "position": { "x": -4.8, "y": 1.2, "z": -2.0 },
+      "interactable": false
+    },
+
+    {
+      "id": "small-plant-1",
+      "name": "Small Plant",
+      "category": "environment",
+      "area": "entrance",
+      "model": "",
+      "position": { "x": 0.5, "y": 0.15, "z": 1.2 },
+      "interactable": false
+    },
+
+    {
+      "id": "small-plant-2",
+      "name": "Small Plant",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 0.0, "y": 0.15, "z": 1.5 },
+      "interactable": false
+    },
+
+    {
+      "id": "wall-clock",
+      "name": "Wall Clock",
+      "category": "environment",
+      "area": "library",
+      "model": "",
+      "position": { "x": 4.7, "y": 2.8, "z": -2 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "framed-sprite",
+      "name": "Framed Pixel Art",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": -4.75, "y": 2, "z": -2.7 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "floating-shelf",
+      "name": "Floating Shelf",
+      "category": "environment",
+      "area": "library",
+      "model": "",
+      "position": { "x": 4.65, "y": 1.3, "z": -2 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "acoustic-panel",
+      "name": "Acoustic Panel",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 1, "y": 1.8, "z": -4.75 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "wall-tv",
+      "name": "Wall-mounted TV",
+      "category": "environment",
+      "area": "library",
+      "model": "",
+      "position": { "x": 4.7, "y": 1.8, "z": -2 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "game-console",
+      "name": "Retro Game Console",
+      "category": "environment",
+      "area": "library",
+      "model": "",
+      "position": { "x": 4.5, "y": 1.2, "z": -2 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false,
+      "collidable": false
+    },
+
+    {
+      "id": "decorative-speaker-1",
+      "name": "Decorative Speaker",
+      "category": "environment",
+      "area": "window-area",
+      "model": "",
+      "position": { "x": 4.65, "y": 1.3, "z": -2.8 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "decorative-speaker-2",
+      "name": "Decorative Speaker",
+      "category": "environment",
+      "area": "window-area",
+      "model": "",
+      "position": { "x": 4.65, "y": 1.3, "z": -1.2 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "pegboard",
+      "name": "Peg Board",
+      "category": "environment",
+      "area": "architecture-zone",
+      "model": "",
+      "position": { "x": 4.75, "y": 2, "z": 3.75 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "pegboard-2",
+      "name": "Peg Board",
+      "category": "environment",
+      "area": "architecture-zone",
+      "model": "",
+      "position": { "x": 4.75, "y": 2, "z": 3.35 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "gaming-collectible",
+      "name": "Gaming Collectible",
+      "category": "environment",
+      "area": "architecture-zone",
+      "model": "",
+      "position": { "x": 2.5, "y": 1.25, "z": 4.2 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "led-sign",
+      "name": "LED Sign",
+      "category": "environment",
+      "area": "entrance",
+      "model": "",
+      "position": { "x": 2.8, "y": 1.25, "z": 4.05 },
+      "rotation": { "x": 60, "y": 180, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "wall-plant",
+      "name": "Wall Plant",
+      "category": "environment",
+      "area": "window-area",
+      "model": "",
+      "position": { "x": 4.4, "y": 1.25, "z": -2.6 },
+      "interactable": false
+    },
+
+    {
+      "id": "hanging-vines",
+      "name": "Hanging Vines",
+      "category": "environment",
+      "area": "window-area",
+      "model": "",
+      "position": { "x": 0, "y": 2.6, "z": 4.8 },
+      "interactable": false
+    },
+
+    {
+      "id": "posters",
+      "name": "Posters",
+      "category": "environment",
+      "area": "architecture-zone",
+      "model": "",
+      "position": { "x": 4.75, "y": 2, "z": 1 },
+      "rotation": { "x": 0, "y": 270, "z": 0 },
+      "interactable": false
+    },
+
+    {
+      "id": "rgb-strip",
+      "name": "RGB Strip",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 2.8, "y": 1.9, "z": 4.25 },
+      "interactable": false
+    },
+
+    {
+      "id": "desk-notebook",
+      "name": "Desk Notebook",
+      "category": "prop",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 4.4, "y": 1.2, "z": -1.5 },
+      "interactable": false
+    },
+
+    {
+      "id": "floor-lamp",
+      "name": "Floor Lamp",
+      "category": "environment",
+      "area": "library",
+      "model": "",
+      "position": { "x": 4.4, "y": 0.4, "z": -0.25 },
+      "interactable": false
+    },
+
+    {
+      "id": "tall-plant",
+      "name": "Tall Plant",
+      "category": "environment",
+      "area": "entrance",
+      "model": "",
+      "position": { "x": 4.4, "y": 0.5, "z": -3.8 },
+      "interactable": false
+    },
+
+    {
+      "id": "waste-bin",
+      "name": "Waste Bin",
+      "category": "environment",
+      "area": "workspace",
+      "model": "",
+      "position": { "x": 1.5, "y": 0.5, "z": 4 },
+      "interactable": false
     },
 
     {
       "id": "headphones",
       "name": "Studio Headphones",
-      "type": "prop",
-      "model": "models/workspace/headphones.glb",
+      "category": "prop",
+      "model": "workspace/headphones.glb",
       "area": "workspace",
-      "position": {
-        "x": -0.45,
-        "y": 0.92,
-        "z": -0.28
-      },
-      "rotation": {
-        "x": 0,
-        "y": 25,
-        "z": 0
-      },
+      "position": { "x": 2, "y": 0.75, "z": -1.28 },
+      "rotation": { "x": 0, "y": 25, "z": 0 },
       "scale": 1,
-      "interactable": false,
-      "castShadow": true,
-      "receiveShadow": true
-    },
-
-    {
-      "id": "career-frame",
-      "name": "Career Timeline Frame",
-      "type": "interactive",
-      "model": "models/decor/career-frame.glb",
-      "area": "hallway",
-      "position": {
-        "x": 2.4,
-        "y": 1.6,
-        "z": -3.2
-      },
-      "rotation": {
-        "x": 0,
-        "y": 180,
-        "z": 0
-      },
-      "scale": 1,
-      "interactionId": "career-timeline",
-      "interactable": true,
-      "castShadow": true,
-      "receiveShadow": true
-    },
-
-    {
-      "id": "city-view",
-      "name": "City Window View",
-      "type": "environment",
-      "model": "models/environment/city-window.glb",
-      "area": "workspace",
-      "position": {
-        "x": -4.8,
-        "y": 2.1,
-        "z": -6.4
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "scale": 1,
-      "interactable": false,
-      "castShadow": false,
-      "receiveShadow": false
+      "interactable": false
     },
 
     {
       "id": "future-projects",
       "name": "Future Projects Board",
-      "type": "interactive",
-      "model": "models/decor/future-projects-board.glb",
-      "area": "innovation-lab",
-      "position": {
-        "x": 5.3,
-        "y": 1.5,
-        "z": -2.6
-      },
-      "rotation": {
-        "x": 0,
-        "y": -90,
-        "z": 0
-      },
+      "category": "future",
+      "model": "future/future-projects-board.glb",
+      "area": "window-area",
+      "position": { "x": -4.1, "y": 1, "z": 3 },
+      "rotation": { "x": 0, "y": -90, "z": 0 },
       "scale": 1,
-      "interactionId": "future-projects",
       "interactable": true,
-      "castShadow": true,
-      "receiveShadow": true
+      "interaction": {
+        "type": "roadmap",
+        "dataSource": "future"
+      },
+      "cameraFocus": {
+        "position": { "x": 0.3, "y": 1.8, "z": 1.6 },
+        "lookAt": { "x": 0.3, "y": 1.5, "z": 2.6 }
+      }
     }
   ]
 }

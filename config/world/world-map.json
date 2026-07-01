@@ -5,6 +5,16 @@
   "spawnPoint": "spawn-main",
   "defaultCamera": "intro-camera",
 
+  "spawnPoints": {
+    "spawn-main": { "position": { "x": 0, "y": 1.72, "z": 0 }, "rotation": 0 },
+    "spawn-workspace": { "position": { "x": 3, "y": 1.72, "z": 0 }, "rotation": 0 },
+    "spawn-library": { "position": { "x": -3, "y": 1.72, "z": 2 }, "rotation": 0 },
+    "spawn-architecture": { "position": { "x": 3, "y": 1.72, "z": -2 }, "rotation": 0 },
+    "spawn-certificate": { "position": { "x": -3, "y": 1.72, "z": -2 }, "rotation": 0 },
+    "spawn-window": { "position": { "x": 0, "y": 1.72, "z": -3 }, "rotation": 3.14159 },
+    "spawn-lab": { "position": { "x": 0, "y": 1.72, "z": 4 }, "rotation": 0 }
+  },
+
   "areas": [
     {
       "id": "entrance",
@@ -12,13 +22,16 @@
       "title": "Arrival",
       "description": "Beginning of the visitor journey.",
       "order": 1,
-      "music": "ambient-rain",
       "lighting": "entrance-lighting",
       "camera": "intro-camera",
+      "position": { "x": 0, "y": 0, "z": 0 },
+      "radius": 2.5,
       "objects": [
         "main-door",
         "welcome-sign",
-        "floor-light"
+        "small-plant-1",
+        "led-sign",
+        "tall-plant"
       ],
       "connections": [
         "workspace"
@@ -30,18 +43,30 @@
       "title": "Developer Desk",
       "description": "Primary interaction area.",
       "order": 2,
-      "music": "workspace-ambient",
       "lighting": "workspace-lighting",
       "camera": "workspace-camera",
+      "position": { "x": 3, "y": 0, "z": 0 },
+      "radius": 2.5,
       "objects": [
         "developer-chair",
+        "main-desk-2",
         "main-desk",
         "monitor-left",
         "monitor-center",
         "monitor-right",
         "keyboard",
         "mouse",
-        "coffee-mug"
+        "coffee-mug",
+        "desk-rug",
+        "wall-light-1",
+        "small-plant-2",
+        "framed-sprite",
+        "acoustic-panel",
+        "rgb-strip",
+        "desk-notebook",
+        "waste-bin",
+        "headphones",
+        "city-view"
       ],
       "connections": [
         "library",
@@ -58,9 +83,20 @@
       "order": 3,
       "lighting": "library-lighting",
       "camera": "bookshelf-camera",
+      "position": { "x": -3, "y": 0, "z": 2 },
+      "radius": 2.5,
       "objects": [
         "bookshelf",
-        "timeline-books"
+        "timeline-books",
+        "cabinet",
+        "wall-light-2",
+        "picture-frame-1",
+        "wall-clock",
+        "floating-shelf",
+        "wall-tv",
+        "game-console",
+        "floor-lamp",
+        "career-frame"
       ],
       "connections": [
         "workspace"
@@ -74,10 +110,20 @@
       "order": 4,
       "lighting": "server-lighting",
       "camera": "server-camera",
+      "position": { "x": 3, "y": 0, "z": -2 },
+      "radius": 2.5,
       "objects": [
         "server-rack",
         "network-board",
-        "terminal-console"
+        "terminal-console",
+        "router",
+        "ups",
+        "picture-frame-2",
+        "pegboard",
+        "pegboard-2",
+        "miniature-pc",
+        "gaming-collectible",
+        "posters"
       ],
       "connections": [
         "workspace"
@@ -91,10 +137,13 @@
       "order": 5,
       "lighting": "certificate-lighting",
       "camera": "certificate-camera",
+      "position": { "x": -3, "y": 0, "z": -2 },
+      "radius": 2.5,
       "objects": [
         "diploma-frame",
         "certificate-frame",
-        "award-frame"
+        "award-frame",
+        "wall-light-3"
       ],
       "connections": [
         "workspace"
@@ -108,9 +157,16 @@
       "order": 6,
       "lighting": "window-lighting",
       "camera": "window-camera",
+      "position": { "x": 0, "y": 0, "z": -3 },
+      "radius": 2.5,
       "objects": [
         "window",
-        "future-board"
+        "future-board",
+        "decorative-speaker-1",
+        "decorative-speaker-2",
+        "wall-plant",
+        "hanging-vines",
+        "future-projects"
       ],
       "connections": [
         "workspace",
@@ -126,6 +182,8 @@
       "unlockCondition": "discover-secret-switch",
       "lighting": "lab-lighting",
       "camera": "lab-camera",
+      "position": { "x": 0, "y": 0, "z": 4 },
+      "radius": 2.5,
       "objects": [
         "prototype-table",
         "ai-terminal",

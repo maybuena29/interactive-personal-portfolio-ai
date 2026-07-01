@@ -9,7 +9,8 @@
     "projects": "projects.json",
     "skills": "skills.json",
     "contact": "contact.json",
-    "settings": "settings.json"
+    "settings": "settings.json",
+    "future": "future.json"
   },
 
   "world": {
