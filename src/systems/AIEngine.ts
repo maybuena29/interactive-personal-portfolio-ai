@@ -166,11 +166,12 @@ export class AIEngine {
 
     if (data.has('experience')) {
       const exps = data.get('experience') as Experience[];
+      const sortedExps = [...exps].sort((a, b) => b.start.localeCompare(a.start));
       if (query.includes('company') || query.includes('companies') || query.includes('worked')) {
-        const companies = exps.map(e => `${e.company} (${e.position})`);
+        const companies = sortedExps.map(e => `${e.company} (${e.position})`);
         parts.push(`\nCompanies: ${companies.join(', ')}`);
       } else {
-        for (const exp of exps) {
+        for (const exp of sortedExps) {
           const techs = exp.technologies?.slice(0, maxItems).join(', ') || '';
           parts.push(`\n${exp.position} @ ${exp.company} (${exp.start} - ${exp.end || 'Present'})`);
           if (exp.summary) parts.push(`  ${exp.summary.slice(0, 150)}`);
@@ -197,7 +198,8 @@ export class AIEngine {
 
     if (data.has('education')) {
       const edus = data.get('education') as Education[];
-      for (const edu of edus) {
+      const sortedEdus = [...edus].sort((a, b) => b.startYear - a.startYear);
+      for (const edu of sortedEdus) {
         const honors = edu.honors?.length ? ` — ${edu.honors.join(', ')}` : '';
         parts.push(`\n${edu.institution} (${edu.startYear} - ${edu.endYear})${honors}`);
         parts.push(`  ${edu.program}${edu.specialization ? ` — ${edu.specialization}` : ''}`);
@@ -219,8 +221,9 @@ export class AIEngine {
 
     if (data.has('timeline')) {
       const tl = data.get('timeline') as Timeline[];
+      const sortedTl = [...tl].sort((a, b) => b.year - a.year);
       if (query.includes('timeline') || query.includes('journey') || query.includes('history') || query.includes('milestone')) {
-        for (const t of tl) {
+        for (const t of sortedTl) {
           parts.push(`\n${t.year} — ${t.title}`);
           if (t.description) parts.push(`  ${t.description.slice(0, 100)}`);
         }
