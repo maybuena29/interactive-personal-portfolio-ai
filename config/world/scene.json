@@ -82,8 +82,8 @@
   "player": {
     "spawn": "spawn-main",
     "height": 1.72,
-    "speed": 3.5,
-    "sprintSpeed": 5.5,
+    "speed": 2.5,
+    "sprintSpeed": 4.0,
     "interactionDistance": 2.5
   },
 
